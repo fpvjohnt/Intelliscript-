@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Interface</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div id="notification-area"></div>
+    <!-- Notification area added here -->
+
+    <div class="chat-container">
+      <div class="sidebar">
+        <!-- Query Section -->
+        <div class="queries">
+          <!-- User queries will be dynamically added here -->
+        </div>
+        <!-- Knowledge Base Section -->
+        <div class="knowledge-base">
+          <!-- Knowledge base items will be dynamically added here -->
+        </div>
+      </div>
+      <div class="chat-area">
+        <!-- Chat messages will go here -->
+        <div class="messages">
+          <!-- Messages will be dynamically added here -->
+        </div>
+        <!-- User input area -->
+        <div class="input-area">
+          <!-- Attach file button -->
+          <label for="file-input" class="attach-button">
+            <img
+              src="{{ url_for('static', filename='paperclip-icon.png') }}"
+              alt="Attach"
+            />
+          </label>
+          <input type="file" id="file-input" hidden />
+          <!-- Text input -->
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type your message here..."
+          />
+          <!-- Send button -->
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

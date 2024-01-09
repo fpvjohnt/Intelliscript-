@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntelliScribe</title>
+    <!-- Correct link to your CSS file in the static folder -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='home.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">INTELLISCRIBE</h1>
+      <nav id="menu">
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('code_interpreter') }}">Code</a></li>
+          <li><a href="#json">JSON</a></li>
+          <li><a href="#knowledgebase">Knowledgebase</a></li>
+          <li><a href="#writer">Writer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="slogan">
+        <p>
+          Your AI assistant that understands your data, automate your documents,
+          and work 24/7 as your digital assistant.
+        </p>
+      </div>
+      <div id="newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>Get Notified of Updates</button>
+      </div>
+    </main>
+    <footer>
+      <p>Intro about you and the company...</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('/static/images/coding-background.jpg'), url('/static/images/neurons.jpg');
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed; /* Optional: if you want the background to be fixed during scroll */
+    background-size: cover; /* Cover the entire viewport */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: #4CAF50; /* Change as needed */
+}
+
+#slogan {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    margin-top: 30px;
+}

@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.interpreter-container {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.split-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#code-input {
+    width: 45%;
+    height: 300px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+#chat-container {
+    width: 45%;
+    height: 300px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.question-input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 10px;
+}
+
+#question-input {
+    width: 80%;
+    padding: 10px;
+}
+
+#send-button {
+    width: 18%;
+    padding: 10px;
+    margin-left: 2%;
+}

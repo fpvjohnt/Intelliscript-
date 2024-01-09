@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Interpreter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='code.css') }}"
+    />
+    <script src="{{ url_for('static', filename='code.js') }}" defer></script>
+  </head>
+  <body>
+    <div class="interpreter-container">
+      <h1 class="title">Code Interpreter</h1>
+      <div class="split-container">
+        <textarea
+          id="code-input"
+          placeholder="Enter your code here..."
+        ></textarea>
+        <div id="response-container">
+          <!-- AI responses will be dynamically added here -->
+        </div>
+      </div>
+      <div class="question-input-container">
+        <input
+          type="text"
+          id="question-input"
+          placeholder="Ask a question about the code..."
+        />
+        <button id="send-button" onclick="askQuestion()">Send</button>
+      </div>
+    </div>
+  </body>
+</html>

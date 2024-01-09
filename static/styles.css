@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar .queries {
+    list-style-type: none;
+}
+
+.sidebar .queries .query {
+    margin-bottom: 10px;
+}
+
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.message.output {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.message .user-query {
+    font-weight: bold;
+}
+
+.input-area {
+    display: flex;
+    align-items: center; /* Align the items vertically */
+    padding: 10px;
+    background-color: white;
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.input-area input[type="file"] {
+    display: none; /* Hide the actual file input */
+}
+
+.attach-button {
+    cursor: pointer;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.input-area button {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #45a049;
+}
+
+/* New styles for notification area */
+#notification-area {
+    padding: 10px;
+    background-color: #f0f0f0; /* Light grey, change as needed */
+    color: #333; /* Dark grey text, change as needed */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none; /* Hide by default */
+}
